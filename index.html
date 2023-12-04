@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="lab7.css">
+    <script src="lab7.js"></script>
+    <title>ЛР_7</title>
+</head>
+<body>
+        <header>
+             <h1>Лабораторна робота №7</h1>
+             <h2>Виконала студентка групи АнД-31<br>Білич Юлія Сергіївна</h2>
+        </header>
+        <h2>Завдання лабораторної</h2>
+        <div class="b-task">
+            На Вашій сторінці є малюнок. При наведенні миші на цей малюнок він повинен змінитися. 
+            Коли Ви відведете мишку в сторону, малюнок має набути початкового вигляду.
+            <br>Ввести № телефона (поле вводу) і назву міста (з клавіатури).
+            Якщо введено місто, якого немає в списку, то повідомити про це користувача, 
+            інакше вивести No телефона, поставивши перед ним код міста.
+        </div>
+        <img title="image" onmouseover="this.src='3.jpg'" onmouseout="this.src='1.jpg'" src="1.jpg"/>
+        <div>
+            <label>Номер телефону<input type="text" id="phone"> </label>
+            <label>Місто<input type="text" id="city"></label>
+        </div>
+        <button id="verify" onclick="print()">Ввести</button>
+        <div id="result"></div>
+</body>
+</html>
